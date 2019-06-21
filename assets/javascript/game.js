@@ -1,15 +1,41 @@
-var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
-        'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's',
-        't', 'u', 'v', 'w', 'x', 'y', 'z'];
-var wins = 0
-var blanks = "";
-var livesLeft = 10;
-var regrets = [];
-var wordPool = ["sensei", "senpai", "uzumaki naruto", "kurosaki ichigo", "midoriya izuku", "gaara", "todoroki shoto", "bakugo katsuki", "jiraiya", "kenpachi", "weeb", "otaku", "my hero academia", "naruto shippuden", "nakano ichika"]
-var 
+window.onload = function () {
+     var word = "yikes";
+     var used = [];
+    
+     
+    document.getElementById("used").addEventListener("keydown", myFunction);
+     
+     function myFunction() {
+    //   doc
+
+    // }
 
 
-function gameStart() {
-    wordPool = word[Math.floor(Math.random() * word.length)];
-    letters = blanks.split("");
-    num = letters.length;
+
+
+
+
+    var wordPool = ["sensei", "senpai", "uzumaki naruto", "kurosaki ichigo", "midoriya izuku", "gaara", "todoroki shoto", "bakugo katsuki", "jiraiya", "kenpachi", "weeb", "otaku", "my hero academia", "naruto shippuden", "nakano ichika"]
+    var goalWord = wordPool[Math.floor(Math.random() * wordPool.length)];
+
+    console.log(goalWord);
+
+    // for (var i = 0; i < goalWord.length; i++) {
+    //     answerArray[i] = "_";
+    // };
+    var wins = document.getElementById("winTotal").innerHTML = 0;
+    
+    //if (input letter === goalWord){
+    //    var wins = (Number+1);
+    //}
+    //else (input letter <= goalWord){
+    //  var livesLeft = (number-1);
+    //}
+    
+    //if/else statemnet for letter if correct
+    //
+    //declare correct/incorrect vars
+
+    //if/else for win/loss declare those var
+    
+}
